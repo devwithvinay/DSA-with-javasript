@@ -39,6 +39,7 @@ console.log(arr[3]); //100
  
 
  */
+ /*
 
   // function 
 
@@ -115,3 +116,20 @@ console.log(value);
    }
 
    evenOdd(2)
+
+   */
+
+   // loops 
+
+   for (let i = 0  ; i <10; i++){
+    console.log('vinay');
+   }
+
+   for (let i=2; i<9; i=i+2){
+    console.log('hello '+ i);
+   }
+
+   for (let i=5; i>0; i--){
+    console.log('himanshu');
+   }
+
