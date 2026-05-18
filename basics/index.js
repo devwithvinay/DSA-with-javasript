@@ -133,3 +133,33 @@ console.log(value);
     console.log('himanshu');
    }
 
+    function greet (i){
+      console.log('Namaste'+i);
+    }
+    for(let i=0; i<5;i++){
+      greet(i)
+    }
+
+    let arr = [10,3,5,8,2,9,34];
+    let length = arr.length;
+    for(let i=0; i<length;i++){
+       console.log(arr[i]);
+    }
+     // Print Even number from an Array
+     let Arr = [1,2,3,4,5,6,7,8,9]
+     for(let i=0; i<Arr.length; i++){
+       if(Arr[i]%2==0){  
+   //    if(evenArr[i]%2==1){   // for odd 
+   console.log(Arr[i]);
+       }
+     }
+
+      // While Loop 
+
+      let i = 0
+      while(i<5){
+       // do whatever you  want 
+        console.log('vinay');
+        i++;
+      }
+
