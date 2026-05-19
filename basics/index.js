@@ -168,7 +168,7 @@ console.log(value);
 
 
 */
-
+// Search Element and return its index number
 let arr = [4,2,0,10,8,30]
 
 function searchElement (x){
@@ -183,3 +183,19 @@ function searchElement (x){
 
 let value  = searchElement(10);
 console.log("The value is",value);
+
+
+// count negative number
+let negArray = [ 2, -3 ,5 , -1 , 0 ,-4]
+
+function countNegative (negArray){
+  let count  = 0;
+  for(let i=0; i<negArray.length; i++){
+    if(negArray[i]<0){
+      count = count +1
+    }
+  }
+  return count;
+}
+let result = countNegative(negArray)
+console.log(result);
