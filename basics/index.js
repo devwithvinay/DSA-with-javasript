@@ -119,6 +119,8 @@ console.log(value);
 
    */
 
+   /*
+
    // loops 
 
    for (let i = 0  ; i <10; i++){
@@ -163,3 +165,21 @@ console.log(value);
         i++;
       }
 
+
+
+*/
+
+let arr = [4,2,0,10,8,30]
+
+function searchElement (x){
+
+  for(let i=0; i<arr.length; i++){
+    if (arr[i] === x ){
+     return i ;
+    }
+  }
+  return -1 ;  // if value is nor in array then return -1
+}
+
+let value  = searchElement(10);
+console.log("The value is",value);
