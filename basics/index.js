@@ -185,7 +185,7 @@ let value  = searchElement(10);
 console.log("The value is",value);
 
 
-// count negative number
+// count negative number of an Array
 let negArray = [ 2, -3 ,5 , -1 , 0 ,-4]
 
 function countNegative (negArray){
@@ -199,3 +199,20 @@ function countNegative (negArray){
 }
 let result = countNegative(negArray)
 console.log(result);
+
+
+// Find the largest no of an Array
+let Array = [2,4,7,18,1,9,10];
+
+function largestNumber (Array){
+    current = 0;
+
+    for(let i=0; i<Array.length; i++){
+      if(Array[i]>current){
+        current = Array[i]
+      }
+    }
+    return current;
+}
+let Ans = largestNumber(Array)
+console.log('Ans',Ans);
