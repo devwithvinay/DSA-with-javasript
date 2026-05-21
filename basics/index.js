@@ -216,3 +216,19 @@ function largestNumber (Array){
 }
 let Ans = largestNumber(Array)
 console.log('Ans',Ans);
+
+// Find the smallestNumber no of an Array
+let Arrays = [2,4,7,18,1,9,10];
+
+function smallestNumber (Arrays){
+    current = Arrays[0];
+
+    for (let i = 0; i < Arrays.length; i++) {
+      if (Arrays[i] < current) {
+        current = Arrays[i];
+      }
+    }
+    return current;
+}
+let Answer = smallestNumber(Arrays);
+console.log('Ans',Answer);
