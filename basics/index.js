@@ -168,6 +168,8 @@ console.log(value);
 
 
 */
+
+/*/
 // Search Element and return its index number
 let arr = [4,2,0,10,8,30]
 
@@ -232,3 +234,26 @@ function smallestNumber (Arrays){
 }
 let Answer = smallestNumber(Arrays);
 console.log('Ans',Answer);
+
+*/
+
+// find the 2nd Largest element of an array
+
+let arr = [4,9,0,2,8,7,1];
+
+function secondGreatest (arr){
+  firstLargest = -Infinity;
+  secondLargest = -Infinity;
+  for(let i=0; i<arr.length; i++){
+    if(arr[i]>firstLargest){
+      secondLargest = firstLargest
+      firstLargest = arr[i]
+    }
+    else if (arr[i]>secondLargest){
+      secondLargest = arr[i]
+    }
+  }
+  return secondLargest ;
+}
+ let result = secondGreatest (arr);
+ console.log('result is :',result);
