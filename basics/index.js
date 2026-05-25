@@ -1,4 +1,3 @@
-
 /*
 let firstName = 7;
 let lastName = 3;
@@ -8,7 +7,7 @@ let fullName = firstName + lastName
 console.log(fullName);
 
 */
-  // array 
+// array
 /*
 let arr = [2,5,7,100,8]
 let sum = arr[2] + arr[4]
@@ -23,7 +22,7 @@ console.log(arr[3]); //100
 
  */
 
- /*
+/*
 
  let obj = {
     a:1,
@@ -39,7 +38,7 @@ console.log(arr[3]); //100
  
 
  */
- /*
+/*
 
   // function 
 
@@ -119,7 +118,7 @@ console.log(value);
 
    */
 
-   /*
+/*
 
    // loops 
 
@@ -236,12 +235,17 @@ let Answer = smallestNumber(Arrays);
 console.log('Ans',Answer);
 
 */
-
+/*
 // find the 2nd Largest element of an array
 
 let arr = [4,9,0,2,8,7,1];
 
 function secondGreatest (arr){
+
+  if(arr.length<2){
+    return null ;
+  }
+
   firstLargest = -Infinity;
   secondLargest = -Infinity;
   for(let i=0; i<arr.length; i++){
@@ -257,3 +261,38 @@ function secondGreatest (arr){
 }
  let result = secondGreatest (arr);
  console.log('result is :',result);
+*/
+
+/*//
+// Loops in Loop
+
+for(let i=0; i<5; i++){
+  for(let j=0; j<5; j++){
+    console.log('i:',i + ' j:',j);
+  }
+}
+
+for(let i=0; i<3; i++){
+  for(let j=0; j<i; j++){
+    console.log('i='+i + ' j='+j);
+  }
+}
+
+for(let i=0; i<5; i++){
+  for(let j=0; j<=i; j++){
+    console.log("i=" + i + " j=" + j);
+  }
+}
+
+for (let i = 0; i<3; i++) {
+  for (let j = i; j>0; j--) {
+    console.log("i=",i+" j=", j);
+  }
+}
+  */
+
+ for (let i=5; i>0; i--){
+  for(let j=0; j<i;j++){
+    console.log("i=" + i + " j=" + j);
+  }
+ }
