@@ -289,21 +289,45 @@ for (let i = 0; i<3; i++) {
     console.log("i=",i+" j=", j);
   }
 }
-  */
+ 
 
  for (let i=5; i>0; i--){
   for(let j=0; j<i;j++){
     console.log("i=" + i + " j=" + j);
   }
  }
- 
- //star pattern
 
-let n = 4 ; 
-for (let i=0; i<n; i++){
-  row = ""
-  for(let j=0; j<n;j++){
-    row=row+"*";
+  */
+
+//star pattern
+
+// let n = 4 ;
+// for (let i=0; i<n; i++){
+//   row = ""
+//   for(let j=0; j<n;j++){
+//     row=row+"*";
+//   }
+//   console.log(row);
+// }
+
+// let n = 4;
+// for (let i = 0; i < n; i++) {
+//   let row = "";
+//   for (let j = 0; j < i + 1; j++) {
+//     row = row + "*";
+//   }
+//   console.log(row);
+// }
+
+let n = 5;
+for (let i = 0; i < n; i++) {
+  let row = "";
+  for (let j = 0; j <= i ; j++) {
+    row = row + (j+1);
+    //row = "" + (0+1) = "" +1 = "1"
+    // row="1"+(1+1) // string + number = String 
+    //row = "1"+2
+    // row = "12"
   }
   console.log(row);
 }
