@@ -298,26 +298,30 @@ for (let i = 0; i<3; i++) {
  }
 
   */
-
+/*
 //star pattern
 
-// let n = 4 ;
-// for (let i=0; i<n; i++){
-//   row = ""
-//   for(let j=0; j<n;j++){
-//     row=row+"*";
-//   }
-//   console.log(row);
-// }
+let n = 4 ;
+for (let i=0; i<n; i++){
+  row = ""
+  for(let j=0; j<n;j++){
+    row=row+"*";
+  }
+  console.log(row);
+}
 
-// let n = 4;
-// for (let i = 0; i < n; i++) {
-//   let row = "";
-//   for (let j = 0; j < i + 1; j++) {
-//     row = row + "*";
-//   }
-//   console.log(row);
-// }
+let n = 4;
+for (let i = 0; i < n; i++) {
+  let row = "";
+  for (let j = 0; j < i + 1; j++) {
+    row = row + "*";
+  }
+  console.log(row);
+}
+  */
+
+// number pattern
+/*
 
 let n = 5;
 for (let i = 0; i < n; i++) {
@@ -331,3 +335,25 @@ for (let i = 0; i < n; i++) {
   }
   console.log(row);
 }
+  */
+
+let n = 5;
+for (let i = 0; i < n; i++) {
+  let row = "";
+  for (let j = 0; j <= i; j++) {
+    row = row + (i + 1);
+  }
+  console.log(row);
+}
+
+// same but remove  0
+
+// let n = 5;
+// for (let i = 1; i <= n; i++) {
+//   let row = "";
+//   for (let j = 1; j <= i; j++) {
+//     row = row +i;
+//   }
+//   console.log(row);
+// }
+
