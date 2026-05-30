@@ -409,7 +409,7 @@ for (let i = 0; i < n; i++) {
 //   }
 //   console.log(row);
 // }
-
+/*
 let n = 6;
   let Switch = 1;
 
@@ -426,4 +426,22 @@ for (let i = 0; i < n; i++) {
   }
   console.log(row);
 }
+*/
+
+ //  Count the digit 
+
+ function countDigit(n){
+   if(n == 0) return 1; // for corner case
+   n = Math.abs(n);  //it makes negative value into positive / absolute
+  let count = 0;
+  while(n>0){
+    n = Math.floor(n/10); // floor ignore after point values 
+     count++;
+  }
+ return count;
+ }
+
+  let num = -680125;
+ let result = countDigit(num)
+ console.log(result);
 
